@@ -128,7 +128,9 @@ const sitemap = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://w
   .map((p) => `  <url><loc>${config.url}${p.path}</loc><lastmod>${TODAY}</lastmod></url>`).join('\n')}\n</urlset>\n`;
 fs.writeFileSync(path.join(OUT, 'sitemap.xml'), sitemap);
 fs.writeFileSync(path.join(OUT, 'robots.txt'), `User-agent: *\nAllow: /\nSitemap: ${config.url}/sitemap.xml\n`);
-fs.writeFileSync(path.join(OUT, 'CNAME'), `${config.domain}\n`);
+// Only once DNS points at GitHub (README → Going live): a CNAME makes Pages
+// redirect the github.io preview URL to the custom domain.
+if (config.customDomainLive) fs.writeFileSync(path.join(OUT, 'CNAME'), `${config.domain}\n`);
 fs.writeFileSync(path.join(OUT, '.nojekyll'), '');
 fs.writeFileSync(path.join(OUT, 'site.webmanifest'), JSON.stringify({
   name: config.name, short_name: config.name, start_url: '/', display: 'browser',
