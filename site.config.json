@@ -12,5 +12,6 @@
   "appStoreUrl": "",
   "launched": false,
   "themeColor": "#6C63FF",
-  "legalUpdated": "2026-11-02"
+  "legalUpdated": "2026-11-02",
+  "customDomainLive": false
 }

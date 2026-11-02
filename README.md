@@ -45,8 +45,9 @@ the Content Security Policy), or a personal family name.
 ## Going live on choreleague.savvylabs.dev
 
 1. In the DNS for **savvylabs.dev** add: `CNAME  choreleague  →  sameerrajwade.github.io`
-2. Repo → Settings → Pages: custom domain `choreleague.savvylabs.dev` (already set by the
-   build's `CNAME` file), wait for the certificate, then tick **Enforce HTTPS**.
+2. Set `"customDomainLive": true` in `site.config.json` and deploy (the build then writes the
+   `CNAME` file). In Settings → Pages wait for the certificate, then tick **Enforce HTTPS**.
+   Until then the site previews at https://sameerrajwade.github.io/asavvylabs-site/
 3. Put `https://choreleague.savvylabs.dev/privacy.html` in Play Console (privacy policy) and
    `https://choreleague.savvylabs.dev/support.html#delete` (account deletion URL).
 
