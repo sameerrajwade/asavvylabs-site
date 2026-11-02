@@ -20,8 +20,14 @@ node scripts/build.mjs                         # build into _site/ + checks
 npx -y http-server _site -p 8080               # preview locally (optional)
 ```
 
-Pushing to `main` builds, checks and deploys. Pull requests build and check
-only. **The build fails** on: a broken internal link or image, an unfilled
+**Deploy today:** `node scripts/deploy.mjs` builds, checks and publishes `_site/` to the
+`gh-pages` branch (Pages serves that branch).
+
+**Switch to automatic deploys (recommended):** the GitHub Actions workflow is ready in
+`ci/pages.yml`. Run `gh auth refresh -s workflow` once, then
+`git mv ci/pages.yml .github/workflows/pages.yml`, push, and set Settings → Pages → Source to
+**GitHub Actions**. From then on every push to `main` builds, checks and deploys; pull
+requests build and check only. **The build fails** on: a broken internal link or image, an unfilled
 `{{token}}`, a page without title/description, an inline `style=""` (blocked by
 the Content Security Policy), or a personal family name.
 
