@@ -1,0 +1,12 @@
+[
+  { "q": "What is Chore League?", "a": "A family chore game. Everyone in the family earns points for the chores they do, a live scoreboard shows who's ahead, and whoever has the most points on Sunday night wins the week. Points can be spent on rewards the parents choose." },
+  { "q": "Do kids need their own phone?", "a": "No. Parents add kids as profiles, and Kid Mode lets a child tick off their own chores on a parent's phone. Older kids can join on their own phone with the family code a parent shares." },
+  { "q": "Do parents play too?", "a": "If you want. By default everyone competes, so a parent can lose to an eight-year-old. You can switch to kids-only, where parents coach and their points still count toward the family goal." },
+  { "q": "How do approvals work?", "a": "When a kid finishes a task it waits for a parent's OK before the points land. Parents get one notification, approve everything from one inbox, or send a task back with a quick note. Small tasks can be approved automatically." },
+  { "q": "What keeps it fun after the first few weeks?", "a": "A new weekly twist (like double points for chores), streaks with a streak shield, levels with real-world perks you choose, bounties, a comeback boost for whoever finished last, 4-week seasons, and stickers parents send just to say well done." },
+  { "q": "Can points become pocket money?", "a": "Optionally. Parents set a rate and kids can ask to cash out; a parent approves it and pays outside the app. Chore League never holds or moves money, and bonus points from weekly twists stay in the game." },
+  { "q": "Can we play against other families?", "a": "Yes. Start a family league and share its code with up to five other families. Families are compared on average points per player, so a small family can beat a big one. Other families only ever see your family's league name and score." },
+  { "q": "What does it cost?", "a": "Nothing. Chore League is free, with no ads and nothing to buy." },
+  { "q": "Is my family's data private?", "a": "Yes. Your family's data is visible only to your family, protected by server-side security rules. We don't use advertising IDs, we never sell data, and you can delete your account and family data any time from Settings or from the Delete account page on this site." },
+  { "q": "Which phones does it work on?", "a": "Android today, with iPhone coming next." }
+]

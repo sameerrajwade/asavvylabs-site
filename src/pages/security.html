@@ -1,0 +1,20 @@
+<!--meta {"title": "Security — Chore League", "description": "How Chore League protects your family's data, and how to report a security issue.", "path": "/security.html", "nav": "security"} -->
+<div class="page-head"><div class="wrap">
+  <p class="eyebrow">Trust</p>
+  <h1>Security</h1>
+  <p class="lead">How we protect your family's data, and how to tell us about a problem.</p>
+</div></div>
+<section><div class="wrap prose">
+  <h2>How your data is protected</h2>
+  <ul>
+    <li><strong>Encryption:</strong> all traffic uses HTTPS/TLS, and data is encrypted at rest by Google Firebase.</li>
+    <li><strong>Family isolation:</strong> server-side security rules let only members of your family read your family's data, with automated tests run before every release.</li>
+    <li><strong>Server-calculated points:</strong> points are awarded by our servers, not the phone, so a kid can't approve their own chores or invent points.</li>
+    <li><strong>Least data:</strong> no advertising ID, no location, no contacts; analytics never include names or task titles.</li>
+    <li><strong>Verified accounts:</strong> new email sign-ups confirm their email before they can create or join a family.</li>
+    <li><strong>This website:</strong> no third-party scripts, fonts or trackers, with a strict Content Security Policy.</li>
+  </ul>
+
+  <h2>Report a vulnerability</h2>
+  <p>Email <a href="mailto:{{config.securityEmail}}?subject=Security%20report">{{config.securityEmail}}</a> with the details and steps to reproduce. Please give us reasonable time to fix it before disclosing it publicly, and don't access or change other families' data while testing. Our <a href=".well-known/security.txt">security.txt</a> has the same details.</p>
+</div></section>
