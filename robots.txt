@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://choreleague.savvylabs.dev/sitemap.xml

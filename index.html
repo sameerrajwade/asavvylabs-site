@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<!-- Strict CSP: everything is self-hosted (no third-party requests). -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; media-src 'self'; style-src 'self'; script-src 'self'; font-src 'self'; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<script src="assets/js/theme-init.js"></script>
+<title>Chore League — the family chore game. Do chores. Win the week.</title>
+<meta name="description" content="A free family chore game for Android: everyone earns points for chores, a live scoreboard, a winner every Sunday, rewards kids save up for, and approvals parents clear in one tap. No ads.">
+<link rel="canonical" href="https://choreleague.savvylabs.dev/">
+<meta name="theme-color" content="#6C63FF">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Chore League">
+<meta property="og:title" content="Chore League — the family chore game. Do chores. Win the week.">
+<meta property="og:description" content="A free family chore game for Android: everyone earns points for chores, a live scoreboard, a winner every Sunday, rewards kids save up for, and approvals parents clear in one tap. No ads.">
+<meta property="og:url" content="https://choreleague.savvylabs.dev/">
+<meta property="og:image" content="https://choreleague.savvylabs.dev/assets/img/brand/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" sizes="512x512" href="assets/img/brand/icon-512.png">
+<link rel="apple-touch-icon" href="assets/img/brand/icon-512.png">
+<link rel="manifest" href="site.webmanifest">
+<link rel="preload" href="assets/fonts/nunito-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/css/site.css?v=20261102">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"MobileApplication","name":"Chore League","operatingSystem":"Android","applicationCategory":"LifestyleApplication","description":"Chore League is a free family chore game: everyone earns points for chores, the week's top scorer wins on Sunday, and kids spend points on rewards you choose. No ads.","url":"https://choreleague.savvylabs.dev","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"publisher":{"@type":"Organization","name":"SavvyLabs","url":"https://savvylabs.dev"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is Chore League?","acceptedAnswer":{"@type":"Answer","text":"A family chore game. Everyone in the family earns points for the chores they do, a live scoreboard shows who's ahead, and whoever has the most points on Sunday night wins the week. Points can be spent on rewards the parents choose."}},{"@type":"Question","name":"Do kids need their own phone?","acceptedAnswer":{"@type":"Answer","text":"No. Parents add kids as profiles, and Kid Mode lets a child tick off their own chores on a parent's phone. Older kids can join on their own phone with the family code a parent shares."}},{"@type":"Question","name":"Do parents play too?","acceptedAnswer":{"@type":"Answer","text":"If you want. By default everyone competes, so a parent can lose to an eight-year-old. You can switch to kids-only, where parents coach and their points still count toward the family goal."}},{"@type":"Question","name":"How do approvals work?","acceptedAnswer":{"@type":"Answer","text":"When a kid finishes a task it waits for a parent's OK before the points land. Parents get one notification, approve everything from one inbox, or send a task back with a quick note. Small tasks can be approved automatically."}},{"@type":"Question","name":"What keeps it fun after the first few weeks?","acceptedAnswer":{"@type":"Answer","text":"A new weekly twist (like double points for chores), streaks with a streak shield, levels with real-world perks you choose, bounties, a comeback boost for whoever finished last, 4-week seasons, and stickers parents send just to say well done."}},{"@type":"Question","name":"Can points become pocket money?","acceptedAnswer":{"@type":"Answer","text":"Optionally. Parents set a rate and kids can ask to cash out; a parent approves it and pays outside the app. Chore League never holds or moves money, and bonus points from weekly twists stay in the game."}},{"@type":"Question","name":"Can we play against other families?","acceptedAnswer":{"@type":"Answer","text":"Yes. Start a family league and share its code with up to five other families. Families are compared on average points per player, so a small family can beat a big one. Other families only ever see your family's league name and score."}},{"@type":"Question","name":"What does it cost?","acceptedAnswer":{"@type":"Answer","text":"Nothing. Chore League is free, with no ads and nothing to buy."}},{"@type":"Question","name":"Is my family's data private?","acceptedAnswer":{"@type":"Answer","text":"Yes. Your family's data is visible only to your family, protected by server-side security rules. We don't use advertising IDs, we never sell data, and you can delete your account and family data any time from Settings or from the Delete account page on this site."}},{"@type":"Question","name":"Which phones does it work on?","acceptedAnswer":{"@type":"Answer","text":"Android today, with iPhone coming next."}}]}</script>
+
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav"><div class="wrap nav-row">
+  <a class="brand" href="index.html" aria-label="Chore League home">
+    <img src="assets/img/brand/chest-3d.png" alt="" width="34" height="34">
+    <span class="word">Chore <span class="gold">League</span></span>
+  </a>
+  <nav aria-label="Main">
+    <a href="features.html" >Features</a>
+    <a href="guide.html" >How it works</a>
+    <a href="families.html" >Families &amp; safety</a>
+    <a href="support.html" >Support</a>
+  </nav>
+  <button id="themeToggle" class="theme-toggle" type="button" aria-label="Switch light or dark theme">
+    <svg class="ic-sun" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2.5M12 19.5V22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M2 12h2.5M19.5 12H22M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8"/></svg>
+    <svg class="ic-moon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M21 12.8A8.5 8.5 0 1 1 11.2 3a6.6 6.6 0 0 0 9.8 9.8Z"/></svg>
+  </button>
+  <a class="btn btn-primary btn-sm" href="mailto:sameerrajwade@gmail.com?subject=Chore%20League%20early%20access">Early access</a>
+</div></header>
+<main id="main">
+<section class="hero"><div class="wrap hero-grid">
+  <div>
+    <p class="eyebrow">The family chore game</p>
+    <h1>Do chores.<br><span class="gold">Win the week.</span></h1>
+    <p class="lead">Chore League turns your family's chores into a weekly game. Everyone earns points, the scoreboard updates live, and Sunday night crowns a winner. Parents too.</p>
+    <div class="cta">
+      <a class="btn btn-primary" href="mailto:sameerrajwade@gmail.com?subject=Chore%20League%20early%20access">Join the early test</a>
+      <a class="btn btn-ghost" href="guide.html">See how it works</a>
+    </div>
+    <ul class="chips" aria-label="Highlights">
+      <li>Free</li><li>No ads</li><li>Kids don't need a phone</li><li>Private to your family</li>
+    </ul>
+  </div>
+  <div class="hero-art">
+    <div class="glow" aria-hidden="true"></div>
+    <!-- SCREENSHOT SLOT: assets/img/screens/today.png (1080×2340 from the phone, generic names). -->
+    <div class="phone"><div class="ph" role="img" aria-label="Today: everyone's chores and the daily bonus chest (screenshot coming soon)"><div><img src="assets/img/brand/chest-3d.png" alt="" width="96" height="96">Today: everyone's chores and the daily bonus chest<small>Screenshot coming soon</small></div></div></div>
+  </div>
+</div></section>
+
+<section class="band"><div class="wrap">
+  <div class="sec-head center">
+    <p class="eyebrow">See it in action</p>
+    <h2>Chore League in 45 seconds</h2>
+    <p class="lead center">A kid ticks off a chore, a parent approves it, the scoreboard moves, and Sunday crowns the winner.</p>
+  </div>
+  <div class="video">
+    <!-- VIDEO SLOT: drop assets/video/demo.mp4 (H.264, ≤ 8 MB) + assets/img/screens/demo-poster.jpg,
+         then set "hasDemoVideo": true in site.config.json. -->
+    <div class="ph" role="img" aria-label="Product demo video coming soon"><div><img src="assets/img/brand/chest-3d.png" alt="" width="96" height="96">Product demo<small>Video coming soon</small></div></div>
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <div class="sec-head">
+    <p class="eyebrow">Why families stick with it</p>
+    <h2>Chore charts fade. Games don't.</h2>
+    <p class="lead">Sticker charts work for two weeks. Chore League keeps the energy up with a real competition, a reason to come back every day, and fairness built in.</p>
+  </div>
+  <div class="pillars">
+    <div class="pillar">
+      <img class="ic" src="assets/img/icons/trophy.png" alt="" width="64" height="64">
+      <p class="kicker">Compete</p>
+      <h3>A winner every Sunday</h3>
+      <p>Live standings all week, a podium, and crowns for top scorer, most improved and goal crusher, so it's not always the oldest kid who wins.</p>
+    </div>
+    <div class="pillar">
+      <img class="ic" src="assets/img/icons/sparkles.png" alt="" width="64" height="64">
+      <p class="kicker">Stay fresh</p>
+      <h3>Something new every week</h3>
+      <p>A weekly twist like double points for chores, daily bonus chests, streaks with a shield, levels with real-world perks, and 4-week seasons.</p>
+    </div>
+    <div class="pillar">
+      <img class="ic" src="assets/img/icons/gift.png" alt="" width="64" height="64">
+      <p class="kicker">Earn</p>
+      <h3>Rewards worth saving for</h3>
+      <p>Kids spend points on rewards you choose, from screen time to an ice-cream trip, and can save toward a bigger one. Optional pocket money.</p>
+    </div>
+  </div>
+</div></section>
+
+<section class="band"><div class="wrap">
+  <div class="split">
+    <div class="split-media">
+      <!-- SCREENSHOT SLOT: assets/img/screens/scores.png -->
+      <div class="phone"><div class="ph" role="img" aria-label="Scores: the live podium and this week's crowns (screenshot coming soon)"><div><img src="assets/img/brand/chest-3d.png" alt="" width="96" height="96">Scores: the live podium and this week's crowns<small>Screenshot coming soon</small></div></div></div>
+    </div>
+    <div>
+      <p class="eyebrow">For the whole family</p>
+      <h2>Parents can play too</h2>
+      <p class="lead">By default everyone competes, so a parent can lose to an eight-year-old. Prefer kids-only? Parents become coaches whose points still feed the family goal.</p>
+      <ul class="ticks">
+        <li>Kid Mode: kids tick off their own chores on a parent's phone</li>
+        <li>Team week: kids vs grown-ups</li>
+        <li>A comeback boost for whoever finished last</li>
+      </ul>
+    </div>
+  </div>
+  <div class="split flip">
+    <div class="split-media">
+      <!-- SCREENSHOT SLOT: assets/img/screens/approvals.png -->
+      <div class="phone"><div class="ph" role="img" aria-label="Approvals: every claim and reward request in one place (screenshot coming soon)"><div><img src="assets/img/brand/chest-3d.png" alt="" width="96" height="96">Approvals: every claim and reward request in one place<small>Screenshot coming soon</small></div></div></div>
+    </div>
+    <div>
+      <p class="eyebrow">Built for busy parents</p>
+      <h2>Approve the day in one tap</h2>
+      <p class="lead">Kids' claims and reward requests land in one inbox. Approve them all at once, send one back with a quick note, or let small tasks approve themselves.</p>
+      <ul class="ticks">
+        <li>One notification, not twenty</li>
+        <li>Photo proof only where it matters</li>
+        <li>A weekly report on how the game is going</li>
+      </ul>
+    </div>
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <div class="sec-head">
+    <p class="eyebrow">How it works</p>
+    <h2>Set up in three minutes</h2>
+  </div>
+  <div class="steps">
+    <div class="step"><h3>Add your kids</h3><p>Enter their ages. Chore League suggests age-right chores and starter rewards. Keep, change or add your own.</p></div>
+    <div class="step"><h3>Play all week</h3><p>Kids tick off chores, parents approve, and the scoreboard moves live. A daily bonus chest rewards finishing everything.</p></div>
+    <div class="step"><h3>Crown a winner</h3><p>Sunday night ranks the week, hands out crowns, and starts a fresh week with a new twist.</p></div>
+  </div>
+</div></section>
+
+<section class="band"><div class="wrap">
+  <div class="sec-head center">
+    <p class="eyebrow">Made for families</p>
+    <h2>Simple to start. Safe by design.</h2>
+  </div>
+  <div class="trust">
+    <div><strong>Free, no ads</strong><span>Nothing to buy, nothing selling your attention.</span></div>
+    <div><strong>No advertising ID</strong><span>Ad tracking is switched off in the app.</span></div>
+    <div><strong>Private to your family</strong><span>Only your family can see your family's data.</span></div>
+    <div><strong>Delete any time</strong><span>From Settings, or from our <a href="support.html#delete">delete account</a> page.</span></div>
+  </div>
+  <!-- TESTIMONIAL SLOT: add 2–3 real quotes from closed-test families (with permission, first name + city only). -->
+</div></section>
+
+<section id="faq"><div class="wrap">
+  <div class="sec-head">
+    <p class="eyebrow">FAQ</p>
+    <h2>Good to know</h2>
+  </div>
+  <div class="faq"><details><summary>What is Chore League?</summary><p>A family chore game. Everyone in the family earns points for the chores they do, a live scoreboard shows who's ahead, and whoever has the most points on Sunday night wins the week. Points can be spent on rewards the parents choose.</p></details>
+<details><summary>Do kids need their own phone?</summary><p>No. Parents add kids as profiles, and Kid Mode lets a child tick off their own chores on a parent's phone. Older kids can join on their own phone with the family code a parent shares.</p></details>
+<details><summary>Do parents play too?</summary><p>If you want. By default everyone competes, so a parent can lose to an eight-year-old. You can switch to kids-only, where parents coach and their points still count toward the family goal.</p></details>
+<details><summary>How do approvals work?</summary><p>When a kid finishes a task it waits for a parent's OK before the points land. Parents get one notification, approve everything from one inbox, or send a task back with a quick note. Small tasks can be approved automatically.</p></details>
+<details><summary>What keeps it fun after the first few weeks?</summary><p>A new weekly twist (like double points for chores), streaks with a streak shield, levels with real-world perks you choose, bounties, a comeback boost for whoever finished last, 4-week seasons, and stickers parents send just to say well done.</p></details>
+<details><summary>Can points become pocket money?</summary><p>Optionally. Parents set a rate and kids can ask to cash out; a parent approves it and pays outside the app. Chore League never holds or moves money, and bonus points from weekly twists stay in the game.</p></details>
+<details><summary>Can we play against other families?</summary><p>Yes. Start a family league and share its code with up to five other families. Families are compared on average points per player, so a small family can beat a big one. Other families only ever see your family's league name and score.</p></details>
+<details><summary>What does it cost?</summary><p>Nothing. Chore League is free, with no ads and nothing to buy.</p></details>
+<details><summary>Is my family's data private?</summary><p>Yes. Your family's data is visible only to your family, protected by server-side security rules. We don't use advertising IDs, we never sell data, and you can delete your account and family data any time from Settings or from the Delete account page on this site.</p></details>
+<details><summary>Which phones does it work on?</summary><p>Android today, with iPhone coming next.</p></details></div>
+</div></section>
+
+<section><div class="wrap">
+  <div class="cta-band">
+    <img src="assets/img/brand/chest-3d.png" alt="" width="96" height="96">
+    <div>
+      <h2>Start your family's league</h2>
+      <p>Free on Android. iPhone is next.</p>
+    </div>
+    <a class="btn btn-primary" href="mailto:sameerrajwade@gmail.com?subject=Chore%20League%20early%20access">Join the early test</a>
+  </div>
+</div></section>
+</main>
+<footer class="foot"><div class="wrap foot-grid">
+  <div class="foot-brand">
+    <a class="brand" href="index.html"><img src="assets/img/brand/chest-3d.png" alt="" width="30" height="30"><span class="word">Chore <span class="gold">League</span></span></a>
+    <p>Do chores. Win the week. A free family chore game. No ads.</p>
+  </div>
+  <nav class="foot-col" aria-label="Product">
+    <h2>Product</h2>
+    <a href="features.html">Features</a>
+    <a href="guide.html">How it works</a>
+    <a href="families.html">Families &amp; safety</a>
+    <a href="press.html">Press kit</a>
+  </nav>
+  <nav class="foot-col" aria-label="Help">
+    <h2>Help</h2>
+    <a href="support.html">Support</a>
+    <a href="support.html#delete">Delete your account</a>
+    <a href="support.html#faq">FAQ</a>
+  </nav>
+  <nav class="foot-col" aria-label="Legal">
+    <h2>Legal</h2>
+    <a href="privacy.html">Privacy policy</a>
+    <a href="terms.html">Terms of use</a>
+    <a href="security.html">Security</a>
+  </nav>
+</div>
+<div class="wrap foot-base">
+  <span>© 2026 <a href="https://savvylabs.dev">SavvyLabs</a>. Chore League is a SavvyLabs product.</span>
+  <span>3D icons: Microsoft Fluent Emoji (MIT).</span>
+</div></footer>
+<script src="assets/js/site.js" defer></script>
+</body>
+</html>

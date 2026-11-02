@@ -1,0 +1,15 @@
+{
+  "name": "Chore League",
+  "short_name": "Chore League",
+  "start_url": "/",
+  "display": "browser",
+  "background_color": "#F7F6FF",
+  "theme_color": "#6C63FF",
+  "icons": [
+    {
+      "src": "/assets/img/brand/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
